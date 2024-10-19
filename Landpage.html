@@ -19,7 +19,16 @@
 
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#">Logo</a>
+            <img src="img/logo.png" class="img-fluid" alt="..." id="logo">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="" aria-label="Search"
+                            id="search-bar">
+                        <button class="btn btn-outline-dark" id="search-btn" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,24 +36,93 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">HOME</a>
+                        <a class="nav-link" href="">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#amenities">Amenities</a>
+                        <a class="nav-link" href="">Amenities</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="">Contact</a>
                     </li>
                 </ul>
-                <nav class="navbar bg-body-tertiary">
-                    <div class="container-fluid">
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                    </div>
-                </nav>
+
             </div>
+        </div>
+
+        <div class="form-btn">
+        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo">Sign Up</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-4">
+                              <label for="validationCustom01" class="form-label">First name</label>
+                              <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <label for="validationCustom02" class="form-label">Last name</label>
+                              <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <label for="validationCustomUsername" class="form-label">Email</label>
+                              <div class="input-group has-validation">
+                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                <div class="invalid-feedback">
+                                  Please choose a username.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="validationCustom03" class="form-label">Address</label>
+                              <input type="text" class="form-control" id="validationCustom03" required>
+                              <div class="invalid-feedback">
+                                Please provide a valid Address.
+                              </div>
+                            </div>
+                            
+                            <div class="col-md-3">
+                              <label for="validationCustom05" class="form-label">Zip</label>
+                              <input type="text" class="form-control" id="validationCustom05" required>
+                              <div class="invalid-feedback">
+                                Please provide a valid zip.
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                  Agree to terms and conditions
+                                </label>
+                                <div class="invalid-feedback">
+                                  You must agree before submitting.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <button class="btn btn-primary" type="submit">Submit</button>
+                            </div>
+                          </form>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo">Log In</button>
+           
         </div>
 
         <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
@@ -56,11 +134,11 @@
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
         aria-labelledby="offcanvasWithBothOptionsLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel" id="cart">Cart</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <p>Try scrolling the rest of the page to see this option in action.</p>
+            <p>Your cart is empty</p>
         </div>
     </div>
 
@@ -77,155 +155,170 @@
             <div class="carousel-item active">
                 <div class="card-group">
                     <div class="card">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                      </div>
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
                     </div>
                     <div class="card">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                      </div>
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
                     </div>
                     <div class="card">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                      </div>
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This card has even longer content than the first to show that equal
+                                height action.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
                     </div>
-                  </div>
+                </div>
             </div>
             <div class="carousel-item">
                 <div class="card-group">
                     <div class="card">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                      </div>
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
                     </div>
                     <div class="card">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                      </div>
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
                     </div>
                     <div class="card">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                      </div>
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This card has even longer content than the first to show that equal
+                                height action.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
                     </div>
-                  </div>
+                </div>
             </div>
             <div class="carousel-item">
                 <div class="card-group">
                     <div class="card">
-                      <img src="img/images4.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                      </div>
+                        <img src="img/images4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
                     </div>
                     <div class="card">
-                      <img src="img/images4.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                      </div>
+                        <img src="img/images4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
                     </div>
                     <div class="card">
-                      <img src="img/images4.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                      </div>
+                        <img src="img/images4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This card has even longer content than the first to show that equal
+                                height action.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="carousel-control-prev-icon next" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="carousel-control-next-icon next" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
 
 
     <div class="container my-5" id="amenities">
-        <h2 class="text-center">Our Amenities</h2>
+        <h2 class="text-center" id="product-h2">Our Products</h2>
         <div class="row">
             <div class="col-md-4">
                 <div class="card">
                     <img src="img/spa.jpg" class="card-img-top" alt="">
                     <div class="card-body">
-                        <h5 class="card-title">Spa</h5>
-                        <p class="card-text">Relax and rejuvenate with our luxurious spa services.</p>
-                        
+                        <p class="card-text">Crocheted Beanie</p>
+                        <p><del>PHP 289.00</del></p>
+                        <h5 class="card-title">PHP 189.00</h5>
+                        <p class="card-text">4.5 <i class="fa-solid fa-star"></i>(1,276)</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="img/gym.jpg" class="card-img-top" alt="Gym">
+                    <img src="img/gym.jpg" class="card-img-top" alt="">
                     <div class="card-body">
-                        <h5 class="card-title">Gym</h5>
-                        <p class="card-text">Stay fit during your stay with our state-of-the-art gym facilities.</p>
-                        
+                        <p class="card-text">Crocheted Dress</p>
+                        <p><del>PHP 429.00</del></p>
+                        <h5 class="card-title">PHP 249.00</h5>
+                        <p class="card-text">4.3 <i class="fa-solid fa-star"></i>(921)</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="img/activities.jpg" class="card-img-top" alt="Activities">
+                    <img src="img/activities.jpg" class="card-img-top" alt="">
                     <div class="card-body">
-                        <h5 class="card-title">Activities</h5>
-                        <p class="card-text">Join us in our activities</p>
-                        
+                        <p class="card-text">Crocheted Scarf</p>
+                        <p><del>PHP 479.00</del></p>
+                        <h5 class="card-title">PHP 334.00</h5>
+                        <p class="card-text">4.6 <i class="fa-solid fa-star"></i>(3,276)</p>
                     </div>
                 </div>
             </div>
         </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </div>
 
-    <div class="container my-5" id="contact">
-        <h2 class="text-center">Contact Us</h2>
-        <form id="contactForm">
-            <div class="mb-3">
-                <label for="contact-name" class="form-label">Name:</label>
-                <input type="text" class="form-control" id="contact-name" required>
-            </div>
-            <div class="mb-3">
-                <label for="contact-email" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="contact-email" required>
-            </div>
-            <div class="mb-3">
-                <label for="contact-message" class="form-label">Message:</label>
-                <textarea class="form-control" id="contact-message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-    </div>
+
 
     <footer class="bg-light text-center text-lg-start">
         <div class="container p-4">

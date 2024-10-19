@@ -10,15 +10,83 @@ body{
     background-attachment: fixed;
 }
 
+#logo{
+    height: 8vh;
+    width: 5vw;
+}
+
+#search-bar{
+    border-radius: 30px;
+    border: 1px solid black;
+}
+
+#search-btn{
+    transition: 0.3s;
+    border-radius: 35px;
+}
+
+.form-btn{
+    gap: 1.6em;
+    position: relative;
+    right: 1em;
+}
+
+.form-btn .btn{
+    border-radius: 30px;
+    font-family: 'Montserrat', var(--font);
+    font-weight: 500;
+}
+
+#search-btn:hover{
+    background-color: #de9904;
+}
+
+#cart{
+    font-family: 'Kanit', var(--font);
+    font-weight: bold;
+}
+
+.pagination{
+    position: relative;
+    top: 2em;
+}
+
+.nav-item .nav-link{
+    color: #db9600;
+    font-family: 'Bebas Neue', var(--font);
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.nav-item .nav-link:hover{
+    color: #fcc347;
+}
+
+.pagination a{
+    color: black;
+}
+.pagination a:hover{
+    color: black;
+}
+
+#product-h2{
+    color: aliceblue;
+}
+
 .navbar{
     background-color: aliceblue;
+}
+
+.container{
+    position: sticky;
 }
 
 #carouselExampleIndicators{
     padding: 100px;
 }
 
-.carousel-control-next-icon{
-    color: black;
+.next{
+    background-color: black;
 }
 
