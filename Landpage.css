@@ -1,3 +1,77 @@
 :root{
     --font: 'Roboto', 'Titillium Web', 'Ubuntu', 'Work Sans', 'Roboto Mono';
 }
+
+.offcanvas-title{
+    font-family: 'Kanit', var(--normal-font);
+}
+
+.offcanvas{
+    position: relative;
+    bottom: 3em;
+}
+
+#staticBackdrop{
+    color: aliceblue;
+    transition: 0.3s;
+}
+
+.offcanvas-list{
+    list-style: none;
+    cursor: pointer;
+}
+
+.offcanvas-list li{
+    padding: 10px;
+}
+
+.btn-outline-success{
+    font-family: 'Montserrat', var(--font);
+}
+
+
+.offcanvas-list-two{
+    list-style: none;
+    cursor: pointer;
+}
+
+.offcanvas-list-two li{
+    padding: 10px;
+}
+
+.offcanvas-list,
+.offcanvas-list-two {
+    list-style: none; 
+    padding: 0; 
+    margin-left: 20px; 
+}
+
+.offcanvas-list li,
+.offcanvas-list-two li {
+    position: relative; 
+    padding: 10px 0; 
+    cursor: pointer; 
+}
+
+.underline {
+    position: relative; 
+    color: whitesmoke; 
+}
+
+.underline::after {
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    bottom: -5px; 
+    width: 100%; 
+    height: 2px; 
+    background-color: white; 
+    transform: scaleX(0); 
+    transform-origin: left; 
+    transition: transform 0.3s ease; 
+}
+
+.offcanvas-list li:hover .underline::after,
+.offcanvas-list-two li:hover .underline::after {
+    transform: scaleX(1); 
+}
