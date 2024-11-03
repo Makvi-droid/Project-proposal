@@ -1,5 +1,5 @@
 :root{
-    --font: 'Roboto', 'Titillium Web', 'Ubuntu', 'Work Sans', 'Roboto Mono';
+    --font: 'Roboto', 'Roboto Mono','Montserrat', 'Open Sans', 'Poppins','Titillium Web', 'Ubuntu', 'Work Sans';
 }
 
 body{
@@ -52,6 +52,15 @@ body{
 #cart{
     font-family: 'Kanit', var(--font);
     font-weight: bold;
+}
+
+#cartBtn{
+    background-color: #db9600;
+    transition: 0.3s;
+}
+
+#cartBtn:hover{
+    background-color: #ffc936;
 }
 
 .pagination{

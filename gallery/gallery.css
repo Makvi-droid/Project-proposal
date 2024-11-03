@@ -1,0 +1,101 @@
+:root{
+    --font: 'Roboto', 'Titillium Web', 'Ubuntu', 'Work Sans', 'Roboto Mono';
+}
+
+body{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}  
+
+#logo{
+    height: 8vh;
+    width: 5vw;
+}
+
+#offcanvasWithBothOptions{
+    transition: 0.3s;
+}
+
+#signUpModal{
+    transition: 0.3s;
+}
+
+#search-bar{
+    border-radius: 30px;
+    border: 1px solid black;
+}
+
+#search-btn{
+    transition: 0.3s;
+    border-radius: 35px;
+}
+
+.form-btn{
+    gap: 1.6em;
+    position: relative;
+    right: 5em;
+}
+
+.form-btn .btn{
+    border-radius: 30px;
+    font-family: 'Montserrat', var(--font);
+    font-weight: 500;
+}
+
+#search-btn:hover{
+    background-color: #de9904;
+}
+
+#cart{
+    font-family: 'Kanit', var(--font);
+    font-weight: bold;
+}
+
+#signUp-btn{
+    transition: 0.3s;
+}
+
+#cartBtn{
+    background-color: #db9600;
+    transition: 0.3s;
+}
+
+#cartBtn:hover{
+    background-color: #ffc936;
+}
+
+.pagination{
+    position: relative;
+    top: 2em;
+}
+
+.nav-item .nav-link{
+    color: #db9600;
+    font-family: 'Bebas Neue', var(--font);
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.nav-item .nav-link:hover{
+    color: #fcc347;
+}
+
+.pagination a{
+    color: black;
+}
+.pagination a:hover{
+    color: black;
+}
+
+#product-h2{
+    color: aliceblue;
+}
+
+.navbar{
+    background-color: aliceblue;
+}
+
