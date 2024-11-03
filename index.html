@@ -36,7 +36,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="">HOME</a>
+                        <a class="nav-link" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="">GALLERY</a>
@@ -53,9 +53,9 @@
         </div>
 
         <div class="form-btn">
-        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal"
+        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#signUpModal"
             data-bs-whatever="@mdo">Sign Up</button>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -63,17 +63,17 @@
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form class="row g-3 needs-validation" novalidate>
+                        <form class="row g-3 needs-validation" validate>
                             <div class="col-md-4">
                               <label for="validationCustom01" class="form-label">First name</label>
-                              <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                              <input type="text" class="form-control" id="validationCustom01" required>
                               <div class="valid-feedback">
                                 Looks good!
                               </div>
                             </div>
                             <div class="col-md-4">
                               <label for="validationCustom02" class="form-label">Last name</label>
-                              <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                              <input type="text" class="form-control" id="validationCustom02" required>
                               <div class="valid-feedback">
                                 Looks good!
                               </div>
@@ -122,15 +122,37 @@
                    
                   </div>
                 </div>
-              </div>
-            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal"
-            data-bs-whatever="@mdo">Log In</button>
+            </div>
+            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#logInModal">Log in</button>
+
+            <!--cart button-->
+            <button class="btn btn-primary" type="button" id="cartBtn" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+                class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></button>
+            <!--cart button-->
+
+            <!--Log in button modal-->
+            <div class="modal fade" id="logInModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Log In</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <form class="row g-3 needs-validation" validate>
+                        <div class="col-md-4">
+                          <label for="email" class="form-label">Email:</label>
+                          <input type="text" class="form-control" id="email" required>
+                          <div class="valid-feedback">
+                            Email accepted
+                          </div>
+                        </div>
+                      </form>
+            </div>
            
         </div>
 
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
-                class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></button>
+       
 
 
     </nav>
