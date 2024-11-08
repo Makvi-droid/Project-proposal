@@ -16,7 +16,7 @@
 </head>
 
 <body>
-
+    
     <!--navbar start-->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -148,12 +148,27 @@
                             <h1 class="modal-title fs-5" id="exampleModalLabel">Log In</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <form class="row g-3 needs-validation" validate>
-                            <div class="col-md-4">
-                                <label for="email" class="form-label">Email:</label>
-                                <input type="text" class="form-control" id="email" required>
-                                <div class="valid-feedback">
-                                    Email accepted
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="modal-body p-4"> <!-- Added padding here -->
+                                <div class="col-md-12 position-relative">
+                                    <label for="validationTooltipUsername" class="form-label">Username</label>
+                                    <div class="input-group has-validation">
+                                        <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                                        <input type="email" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                                        <div class="invalid-tooltip">
+                                            Please choose a unique and valid username.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 position-relative">
+                                    <label for="validationTooltipPassword" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="validationTooltipPassword" required>
+                                    <div class="invalid-tooltip">
+                                        Please provide a valid password.
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <button class="btn btn-primary" type="submit">Log In</button>
                                 </div>
                             </div>
                         </form>
@@ -164,8 +179,12 @@
 
 
 
-                <!--add to cart btn start with modal-->
+                
     </nav>
+
+
+
+    <!--add to cart btn start with modal-->
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
         aria-labelledby="offcanvasWithBothOptionsLabel">
         <div class="offcanvas-header">
@@ -180,6 +199,163 @@
     <!--navbar end-->
 
 
+<!--Holiday sale and trend section-->
+    <div class="carousel-section">
+        <!-- Holiday Sale Section -->
+        <div id="holiday-sale" class="carousel">
+            <div class="carousel-caption">
+                <h2>Get Ready for the Best Holiday Deals!</h2>
+            </div>
+            <img src="img/img1.jpg" alt="Holiday Sale 1" class="carousel-image">
+            <img src="img/img2.jpg" alt="Holiday Sale 2" class="carousel-image">
+            <img src="img/img3.jpg" alt="Holiday Sale 3" class="carousel-image">
+        </div>
+    
+        <!-- Trending Section -->
+        <div id="trending" class="carousel">
+            <div class="carousel-caption">
+                <h2>Trending Now Hot Picks for You!</h2>
+            </div>
+            <img src="img/shorts1.png" alt="Trending 1" class="carousel-image">
+            <img src="img/sweater1.png" alt="Trending 2" class="carousel-image">
+            <img src="img/tshirt1.png" alt="Trending 3" class="carousel-image">
+        </div>
+    </div
+
+
+
+<div class="container mt-5 products">
+    <!-- Category 1: Crochet Hats -->
+    <h2 class="mb-4">Crochet Hats</h2>
+    <div class="row">
+      <!-- Product Card (Initial) -->
+      <div class="col-6 col-md-4 col-lg-3 mb-4 product-card">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#productModal1">
+          <img src="path-to-image1.jpg" class="card-img-top" alt="Crochet Hat 1">
+          <div class="card-body">
+            <h5 class="card-title">Hat 1</h5>
+            <p class="card-text">$15.99</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 mb-4 product-card">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#productModal2">
+          <img src="path-to-image2.jpg" class="card-img-top" alt="Crochet Hat 2">
+          <div class="card-body">
+            <h5 class="card-title">Hat 2</h5>
+            <p class="card-text">$18.99</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Collapsible Section for More Products in Category 1 -->
+    <div class="collapse" id="collapseHats">
+      <div class="row">
+        <!-- Additional Product Cards -->
+        <div class="col-6 col-md-4 col-lg-3 mb-4 product-card">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#productModal3">
+            <img src="path-to-image3.jpg" class="card-img-top" alt="Crochet Hat 3">
+            <div class="card-body">
+              <h5 class="card-title">Hat 3</h5>
+              <p class="card-text">$22.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-4 product-card">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#productModal4">
+            <img src="path-to-image4.jpg" class="card-img-top" alt="Crochet Hat 4">
+            <div class="card-body">
+              <h5 class="card-title">Hat 4</h5>
+              <p class="card-text">$20.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- "Show More" Dropdown Button for Category 1 -->
+    <button class="btn btn-link show-more" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHats" aria-expanded="false" aria-controls="collapseHats">
+      Show More Crochet Hats
+    </button>
+  
+    <!-- Category 2: Crochet Scarves -->
+    <h2 class="mt-5 mb-4">Crochet Scarves</h2>
+    <div class="row">
+      <!-- Product Card (Initial) -->
+      <div class="col-6 col-md-4 col-lg-3 mb-4 product-card">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#productModal5">
+          <img src="path-to-image5.jpg" class="card-img-top" alt="Crochet Scarf 1">
+          <div class="card-body">
+            <h5 class="card-title">Scarf 1</h5>
+            <p class="card-text">$25.99</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 mb-4 product-card">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#productModal6">
+          <img src="path-to-image6.jpg" class="card-img-top" alt="Crochet Scarf 2">
+          <div class="card-body">
+            <h5 class="card-title">Scarf 2</h5>
+            <p class="card-text">$28.99</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Collapsible Section for More Products in Category 2 -->
+    <div class="collapse" id="collapseScarves">
+      <div class="row">
+        <!-- Additional Product Cards -->
+        <div class="col-6 col-md-4 col-lg-3 mb-4 product-card">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#productModal7">
+            <img src="path-to-image7.jpg" class="card-img-top" alt="Crochet Scarf 3">
+            <div class="card-body">
+              <h5 class="card-title">Scarf 3</h5>
+              <p class="card-text">$30.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-4 product-card">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#productModal8">
+            <img src="path-to-image8.jpg" class="card-img-top" alt="Crochet Scarf 4">
+            <div class="card-body">
+              <h5 class="card-title">Scarf 4</h5>
+              <p class="card-text">$32.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- "Show More" Dropdown Button for Category 2 -->
+    <button class="btn btn-link show-more" type="button" data-bs-toggle="collapse" data-bs-target="#collapseScarves" aria-expanded="false" aria-controls="collapseScarves">
+      Show More Crochet Scarves
+    </button>
+  </div>
+  
+  <!-- Modals for Product Details (Sample for Hat 1) -->
+  <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="productModalLabel">Crochet Hat 1</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="path-to-image1.jpg" class="img-fluid" alt="Crochet Hat 1">
+          <p>Description of the crochet hat...</p>
+          <p><strong>Price: $15.99</strong></p>
+          <button class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
 
 
 

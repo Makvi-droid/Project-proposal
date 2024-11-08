@@ -1,5 +1,7 @@
 :root{
     --font: 'Roboto', 'Titillium Web', 'Ubuntu', 'Work Sans', 'Roboto Mono';
+    --dark-color: #db9600;
+
 }
 
 body{
@@ -46,7 +48,7 @@ body{
 }
 
 #search-btn:hover{
-    background-color: #de9904;
+    background-color: var(--dark-color);
 }
 
 #cart{
@@ -73,7 +75,7 @@ body{
 }
 
 .nav-item .nav-link{
-    color: #db9600;
+    color: var(--dark-color);
     font-family: 'Bebas Neue', var(--font);
     font-size: 2em;
     letter-spacing: 2px;
@@ -99,3 +101,88 @@ body{
     background-color: aliceblue;
 }
 
+/*gallery*/
+
+/* holiday and trending style */
+.carousel-section {
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+
+.carousel {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 30px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    top: -50px;  /* Moves caption above images */
+    margin-bottom: 20px; /* Adds space between caption and carousel images */
+    display: inline-block;
+}
+
+
+
+
+
+
+
+.products .show-more{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: 0.2s;
+}
+
+.products .crochet-scarves{
+    position: relative;
+    top: 2em;
+}
+
+.products .show-more:hover{
+    background-color: var(--dark-color);
+    color: aliceblue;
+}
+
+.products h2{
+    color: aliceblue;
+    font-family: 'Bebas Neue', var(--font);
+    letter-spacing: 2px;
+    font-size: 3rem;
+}
+
+.product-card {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.btn-link {
+    padding: 0;
+    text-decoration: underline;
+}
+
+.btn-link:hover {
+    text-decoration: none;
+}
+
+#logInModal{
+    transition: 0.3s;
+}
