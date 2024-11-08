@@ -104,43 +104,35 @@ body{
 /*gallery*/
 
 /* holiday and trending style */
-.carousel-section {
-    padding: 50px 0;
-    text-align: center;
-    color: white;
-}
+.carousel-item img {
+    height: 400px; /* Adjust as per your design */
+    object-fit: cover;
+    border-radius: 20px;
+    cursor: pointer;
+  }
 
-.carousel {
-    position: relative;
-    display: block;
-    width: 100%;
-    margin-bottom: 30px;
+.ht-sale{
+    display: inline;
+    
 }
-
-.carousel-image {
-    width: 100%;
-    height: auto;
-    transition: opacity 0.5s ease;
-}
-
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 15px 30px;
-    color: white;
-    font-size: 28px;
+  
+.sale h2 {
+    font-family: 'Bebas Neue', var(--font);
+    font-size: 2rem;
+    color: whitesmoke;
+  }
+  
+.sale p {
+    font-family: 'Montserrat', var(--font);
+    font-size: 1.2rem;
     font-weight: bold;
-    position: relative;
-    top: -50px;  /* Moves caption above images */
-    margin-bottom: 20px; /* Adds space between caption and carousel images */
-    display: inline-block;
-}
+    color: whitesmoke;
+  }
 
 
 
 
-
-
-
+/*products*/
 .products .show-more{
     color: white;
     text-decoration: none;
@@ -171,7 +163,8 @@ body{
 }
 
 .product-card:hover {
-    transform: scale(1.05);
+    cursor: pointer;
+    transform: scale(1.08);
 }
 
 .btn-link {
@@ -184,5 +177,9 @@ body{
 }
 
 #logInModal{
+    transition: 0.3s;
+}
+
+.fab{
     transition: 0.3s;
 }

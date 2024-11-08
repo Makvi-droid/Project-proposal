@@ -1,17 +1,15 @@
-$(document).ready(function() {
-    function startCarousel(sectionId) {
-        let currentIndex = 0;
-        const images = $(sectionId).find('.carousel-image');
-        images.eq(currentIndex).addClass('active');
+$(document).ready(function () {
+    $('#holidayCarousel, #trendingCarousel').on('slid.bs.carousel', function () {
+      console.log('Carousel slide finished');
+      // You can add any custom functionality here, such as animations after slide
+    });
+  });
 
-        setInterval(function() {
-            images.eq(currentIndex).removeClass('active');
-            currentIndex = (currentIndex + 1) % images.length;
-            images.eq(currentIndex).addClass('active');
-        }, 3000); // Change image every 3 seconds
-    }
+$(document).ready(function(){
 
-    // Initialize carousel for each section
-    startCarousel('#holiday-sale');
-    startCarousel('#trending');
+    document.getElementById('cartBtn').addEventListener('click', function() {
+        var cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
+        cartModal.show();
+    });
+
 });
