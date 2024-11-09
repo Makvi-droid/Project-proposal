@@ -18,11 +18,336 @@
 
 <body>
 
+     <!--navbar start-->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <img src="img/logo3.png" class="img-fluid" alt="..." id="logo">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="" aria-label="Search" id="search-bar">
+            <button class="btn btn-outline-dark" id="search-btn" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../gallery/gallery.html">GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">CONTACT</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <!--sign-up form start-->
+    <div class="form-btn">
+      <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#signUpModal"
+        data-bs-whatever="@mdo">Sign Up</button>
+      <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                id="signUp-btn"></button>
+            </div>
+            <div class="modal-body">
+              <form class="row g-3 needs-validation" validate>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="validationCustom01" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="validationCustom02" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustomUsername" class="form-label">Email</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control" id="validationCustomUsername"
+                      aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      Please choose a username.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom03" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="validationCustom03" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid Address.
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="validationCustom05" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="validationCustom05" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--sign-up form end-->
+      <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#logInModal">Log
+        in</button>
+
+
+      <!--cart button-->
+      <button class="btn btn-primary" type="button" id="cartBtn" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+          class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></button>
+      <!--cart button-->
+
+      <!--Log in button modal start-->
+      <div class="modal fade" id="logInModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Log In</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="modal-body p-4"> <!-- Added padding here -->
+                <div class="col-md-12 position-relative">
+                  <label for="validationTooltipUsername" class="form-label">Username</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                    <input type="email" class="form-control" id="validationTooltipUsername"
+                      aria-describedby="validationTooltipUsernamePrepend" required>
+                    <div class="invalid-tooltip">
+                      Please choose a unique and valid username.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 position-relative">
+                  <label for="validationTooltipPassword" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="validationTooltipPassword" required>
+                  <div class="invalid-tooltip">
+                    Please provide a valid password.
+                  </div>
+                </div>
+                <div class="col-12 mt-3">
+                  <button class="btn btn-primary" type="submit">Log In</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!--Log in button modal end-->
+
+        </div>
 
 
 
 
+  </nav>
 
+
+
+  <!--add to cart btn start with modal-->
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+    aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel" id="cart">Cart</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>Your cart is empty</p>
+    </div>
+    <!--add to cart btn end with modal-->
+  </div>
+  <!--navbar end-->
+
+
+<!--About us-->
+
+
+<!--team intro, other and testimonials-->
+<div class="container my-5 py-5" id="abt2">
+    <!-- About Us Section -->
+    <div class="row align-items-center mb-5 pb-5" style="border-bottom: 2px solid #ddd;">
+        <div class="col-md-6 mb-4 mb-md-0">
+            <img src="img/img2.jpg" class="img-fluid rounded shadow" alt="Handcrafted crochet product">
+        </div>
+        <div class="col-md-6">
+            <h2 class="display-5 mb-4" id="abt-txt">About Us</h2>
+            <p class="mb-3">
+                Welcome to <strong>Binary Threads</strong>, your go-to destination for handcrafted crochet products! We’re passionate about creating beautiful, unique, and high-quality crochet items that bring warmth, style, and charm to your everyday life.
+            </p>
+            <p class="mb-3">
+                Our team is dedicated to preserving the art of crochet while adding a modern twist to traditional designs. Every stitch tells a story, and we’re thrilled to share our creations with you.
+            </p>
+            <p>
+                Thank you for supporting our small business. We can’t wait to be part of your story, one crochet piece at a time.
+            </p>
+        </div>
+    </div>
+
+    <!-- Our Mission Section -->
+    <div class="my-5 py-5 bg-light rounded-3 shadow-sm">
+        <h3 class="text-center display-6 mb-4">Our Mission</h3>
+        <p class="text-center mx-auto" style="max-width: 700px;">
+            At <strong>Binary Threads</strong>, we strive to bring joy through crochet by providing sustainable, handmade products that create a sense of comfort and warmth.
+        </p>
+    </div>
+
+    <!-- Meet the Team Section -->
+    <div class="container my-5 py-5">
+        <h3 class="text-center display-6 mb-4">Meet the Team</h3>
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <img src="img/g1.png" class="img-fluid rounded-circle shadow mb-3" alt="Team Member 1" style="width: 150px; height: 150px;">
+                <h5>James Francis P. Rabena</h5>
+
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="img/g2.png" class="img-fluid rounded-circle shadow mb-3" alt="Team Member 2" style="width: 150px; height: 150px;">
+                <h5>Isaiah Joshua A. Garcia</h5>
+                
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="img/g3.png" class="img-fluid rounded-circle shadow mb-3" alt="Team Member 3" style="width: 150px; height: 150px;">
+                <h5>Vaniel Luis S. Jorge</h5>
+                
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="img/g4.png" class="img-fluid rounded-circle shadow mb-3" alt="Team Member 3" style="width: 150px; height: 150px;">
+                <h5>Monique G. Roa</h5>
+                
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="img/g5.jpg" class="img-fluid rounded-circle shadow mb-3" alt="Team Member 3" style="width: 150px; height: 150px;">
+                <h5>Pascual Bernard T. Beanuro</h5>
+              
+            </div>
+        </div>
+    </div>
+
+    <!-- Materials and Sustainability Section -->
+    <div class="my-5 py-5 bg-light rounded-3 shadow-sm">
+        <h3 class="text-center display-6 mb-4">Our Materials and Sustainability</h3>
+        <p class="text-center mx-auto" style="max-width: 700px;">
+            We use eco-friendly, locally sourced yarns and materials to ensure each product has a minimal environmental impact. Our commitment to sustainability reflects our love for the planet and our goal to provide handmade, guilt-free crochet items.
+        </p>
+    </div>
+
+    <!-- Customer Testimonials Section -->
+    <div class="container my-5 py-5">
+        <h3 class="text-center display-6 mb-4">What Our Customers Say</h3>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="img/img3.jpg" class="img-fluid rounded-circle shadow mb-3" alt="Customer Sarah T." style="width: 230px; height: 230px;">
+                <blockquote class="blockquote">
+                    <p>"Absolutely in love with my new crochet blanket! It's so warm and beautifully made."</p>
+                    <footer class="blockquote-footer">Sarah T.</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="img/img4.jpg" class="img-fluid rounded-circle shadow mb-3" alt="Customer James L." style="width: 230px; height: 230px;">
+                <blockquote class="blockquote">
+                    <p>"The quality is amazing, and I love supporting a small business with such heart."</p>
+                    <footer class="blockquote-footer">James L.</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="img/img5.jpg" class="img-fluid rounded-circle shadow mb-3" alt="Customer Emily R." style="width: 230px; height: 230px;">
+                <blockquote class="blockquote">
+                    <p>"These crochet pieces bring so much warmth to my home decor. Highly recommend!"</p>
+                    <footer class="blockquote-footer">Emily R.</footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<footer class="bg-light text-center text-lg-start">
+    <div class="container p-4">
+        <section class="mb-4">
+            <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                    class="fab fa-twitter"></i></a>
+            <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                    class="fab fa-instagram"></i></a>
+            <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                    class="fab fa-linkedin"></i></a>
+        </section>
+
+        <section class="">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Binary Threads Apparel</h5>
+                    <p>
+                        Handmade crochet apparel, accessories, and decor in one site, a click away.
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#about" class="text-dark">Home</a></li>
+                        <li><a href="#Gallery" class="text-dark">Gallery</a></li>
+                        <li><a href="#about" class="text-dark">About Us</a></li>
+                        <li><a href="#contact" class="text-dark">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Contact</h5>
+                    <p>Email: info@binarythreads.com</p>
+                    <p>Phone: +961 451 7757</p>
+                    <p>Address: 153 Flower St. Brgy St. Andrew, Atniac, Rizal</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="text-center p-3 bg-dark text-white">
+        © 2024 Binary Threads. All rights reserved.
+    </div>
+</footer>
 
 
 
@@ -34,6 +359,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
         integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
     <script src="about.js"></script>
+    <script src="https://kit.fontawesome.com/77d4dcdf26.js" crossorigin="anonymous"></script>
 
 
 </body>
