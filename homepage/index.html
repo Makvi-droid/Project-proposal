@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="contact.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="Landpage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -36,16 +36,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">HOME</a>
+                        <a class="nav-link" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../gallery/gallery.html">GALLERY</a>
+                        <a class="nav-link" href="gallery/gallery.html">GALLERY</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../about/about.html">ABOUT US</a>
+                        <a class="nav-link" href="about/about.html">ABOUT US</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">CONTACT</a>
+                        <a class="nav-link" href="contact/contact.html">CONTACT</a>
                     </li>
                 </ul>
 
@@ -201,106 +201,181 @@
 
 
 
-<div class="container my-5">
-    <!-- Contact Form Card -->
-    <div class="card shadow-lg">
-        <div class="row g-0">
-            <!-- Contact Info and Form Column -->
-            <div class="col-md-8 p-4">
-                <h2 class="text-center" id="contact-h2">Contact Us</h2>
-                <p class="text-center mb-4">
-                    <strong>Hi there,</strong><br><br>
-                    We'd love to hear from you whether to suggest new products, give reviews, or just simply say hi. Here is where you can contact us:<br><br>
-                    <strong>Email:</strong> info@binarythreads.com<br>
-                    <strong>Phone:</strong> +961 451 7757<br>
-                    <strong>Address:</strong> 153 Flower St. Brgy St. Andrew, Atniac, Rizal<br>
-                    <section class="mb-4 text-center">
-                        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin"></i></a>
-                    </section>
-                    Looking forward to your messages,<br>
-                    <strong>Binary Threads Team</strong>
-                </p>
-
-                <!-- Contact Form -->
-                <form id="contactForm" class="needs-validation" novalidate>
-                    <div class="mb-3">
-                        <label for="username" class="form-label">Username</label>
-                        <input type="text" class="form-control" id="username" name="username" required>
-                        <div class="invalid-feedback">Please enter your username.</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
-                        <div class="invalid-feedback">Please enter your name.</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                        <div class="invalid-feedback">Please enter a valid email.</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                        <div class="invalid-feedback">Please enter a message.</div>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary w-100">Submit</button>
-                </form>
-                
-                <!-- Confirmation Modal -->
-                <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="confirmModalLabel">Confirm Submission of Contact Form?</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                Are you sure you want to submit the contact form?
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                <button type="button" class="btn btn-primary" id="confirmSubmit">Confirm</button>
-                            </div>
+<!--carousel start-->
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card-group">
+                    <div class="card">
+                        <img src="img/tshirt1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Crocheted Shirts</h5>
+                            <p class="card-text">Stylish yet simple crochet shirts made in various fibers and styles, from breathable cotton to acrylic, from the classic granny square shirt to double crochets. </p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                         </div>
                     </div>
-                </div>
-
-                <!-- Success Modal -->
-                <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="successModalLabel">Form Successfully Sent</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                Your form has been successfully submitted. Thank you for your message.
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
-                            </div>
+                    <div class="card">
+                        <img src="img/dress1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Crocheted Dresses</h5>
+                            <p class="card-text">Eye-catching handmade crochet dresses to steal the spotlight of every party and room. 
+                                </p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/sweater1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Crochet Sweaters</h5>
+                            <p class="card-text">From the classic granny's square sweaters to clean and minimalistic yet practical designs,
+                                we have you covered to combat the coldest weathers.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Image Column -->
-            <div class="col-md-4 p-0">
-                <img src="img/contact.jpg" class="img-fluid rounded-end" alt="Contact Us" style="object-fit: cover; height: 100%;">
+            <div class="carousel-item">
+                <div class="card-group">
+                    <div class="card">
+                        <img src="img/scarf1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Crocheted Scarves</h5>
+                            <p class="card-text">Thick, wide, and warm handmade crocheted scarves made with love and care to keep you company
+                                in cold weathers.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/beanie1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Crocheted Beanies</h5>
+                            <p class="card-text">Cute and comfortable, these handmade crocheted beanies will make you as cute as a bean
+                                ,while also keeping you warm.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/bag1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Crocheted Bags</h5>
+                            <p class="card-text">Very cute, demure, and mindful. These bags are very practical yet stylish. Made with strong cotton yarns
+                                to handle tough love, while also being your cute shopping companion.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card-group">
+                    <div class="card">
+                        <img src="img/shorts1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Crocheted Shorts</h5>
+                            <p class="card-text">Crochet shorts made in breathable acrylic and bamboo yarn to keep you cool, smooth, and 
+                                stylish for the warm weathers.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/decor1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Crocheted Decor</h5>
+                            <p class="card-text">Spice up your home with beautiful, rustic, handmade decors that will surely wow visitors
+                                and be a cute conversation piece.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/plushie1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Crocheted Plushies</h5>
+                            <p class="card-text">Need company during lonely nights or scary dark days? Our selection of cute and huggable
+                                crochet plushie will sure have you giggling with glee.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon next" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon next" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-</div>
+<!--carousel end-->
 
 
-
-
-
-
+<!--pagination start-->
+    <div class="container my-5" id="amenities">
+        <h2 class="text-center" id="product-h2">Our Products</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/beanie1.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Ribbed Beanie</p>
+                        <p><del>PHP 289.00</del></p>
+                        <h5 class="card-title">PHP 189.00</h5>
+                        <p class="card-text">4.5 <i class="fa-solid fa-star"></i>(1,276)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/dress1.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Beach Netted Dress</p>
+                        <p><del>PHP 1599.00</del></p>
+                        <h5 class="card-title">PHP 1099.00</h5>
+                        <p class="card-text">4.3 <i class="fa-solid fa-star"></i>(921)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/scarf1.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Classic Scarf</p>
+                        <p><del>PHP 479.00</del></p>
+                        <h5 class="card-title">PHP 334.00</h5>
+                        <p class="card-text">4.6 <i class="fa-solid fa-star"></i>(3,276)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+<!--pagination end-->
 
 
     <footer class="bg-light text-center text-lg-start">
@@ -359,7 +434,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
         integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
 
-    <script src="contact.js"></script>
+    <script src="Landpage.js"></script>
 </body>
 
 </html>
