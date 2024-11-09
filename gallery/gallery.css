@@ -109,10 +109,9 @@ body{
     object-fit: cover;
     border-radius: 20px;
     cursor: pointer;
-  }
+}
 
-.ht-sale{
-    display: inline;
+.sales-bg{
     
 }
   
@@ -120,19 +119,21 @@ body{
     font-family: 'Bebas Neue', var(--font);
     font-size: 2rem;
     color: whitesmoke;
-  }
+    letter-spacing: 1.5px;
+}
   
 .sale p {
     font-family: 'Montserrat', var(--font);
     font-size: 1.2rem;
     font-weight: bold;
     color: whitesmoke;
-  }
+}
 
 
 
 
 /*products*/
+
 .products .show-more{
     color: white;
     text-decoration: none;
@@ -182,4 +183,8 @@ body{
 
 .fab{
     transition: 0.3s;
+}
+
+hr{
+    border: 10px solid whitesmoke;
 }
