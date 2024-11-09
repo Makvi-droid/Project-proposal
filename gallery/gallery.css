@@ -66,7 +66,7 @@ body{
 }
 
 #cartBtn:hover{
-    background-color: #ffc936;
+    background-color: #664b00;
 }
 
 .pagination{
@@ -83,7 +83,7 @@ body{
 }
 
 .nav-item .nav-link:hover{
-    color: #fcc347;
+    color: #664b00;
 }
 
 .pagination a{
@@ -109,10 +109,6 @@ body{
     object-fit: cover;
     border-radius: 20px;
     cursor: pointer;
-}
-
-.sales-bg{
-    
 }
   
 .sale h2 {

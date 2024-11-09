@@ -1,14 +1,14 @@
 :root{
-    --font: 'Roboto', 'Titillium Web', 'Ubuntu', 'Work Sans', 'Roboto Mono';
-    --dark-color: #db9600;
-
-} 
-
-body{
-    background: #fcc347;
+    --font: 'Roboto', 'Roboto Mono','Montserrat', 'Open Sans', 'Poppins','Titillium Web', 'Ubuntu', 'Work Sans';
 }
 
-/*navbar start*/
+body{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/contact1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}  
 
 #logo{
     height: 8vh;
@@ -46,16 +46,12 @@ body{
 }
 
 #search-btn:hover{
-    background-color: var(--dark-color);
+    background-color: #de9904;
 }
 
 #cart{
     font-family: 'Kanit', var(--font);
     font-weight: bold;
-}
-
-#signUp-btn{
-    transition: 0.3s;
 }
 
 #cartBtn{
@@ -67,13 +63,17 @@ body{
     background-color: #664b00;
 }
 
+#logInModal{
+    transition: 0.3s;
+}
+
 .pagination{
     position: relative;
     top: 2em;
 }
 
 .nav-item .nav-link{
-    color: var(--dark-color);
+    color: #db9600;
     font-family: 'Bebas Neue', var(--font);
     font-size: 2em;
     letter-spacing: 2px;
@@ -99,41 +99,46 @@ body{
     background-color: aliceblue;
 }
 
-/*navbar end*/
-
-/*about*/
-.img{
-    width: auto;
-    height: 28em;
-    position: relative;
-    top: 4em;
-    right: 8em;
-    border: 2px solid black;
-    border-radius: 20px;
+.container{
+    position: sticky;
 }
 
-#abt-txt{
-    font-family: 'Bebas Neue', var(--font);
+#carouselExampleIndicators{
+    padding: 100px;
 }
 
-#abt2 h2, h3 {
-    font-weight: bold;
-}
-#abt2 p {
-    font-family: 'Montserrat', var(--font);
-    color: #555;
-}
-.bg-light {
-    background-color: #555 !important;
-}
-.blockquote {
-    font-style: italic;
-}
-.shadow-sm {
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+.next{
+    background-color: black;
 }
 
 .fab{
     transition: 0.3s;
+}
+
+#contact-h2 {
+    color: #db9600;
+    font-family: 'Bebas Neue', var(--font);
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+#contactForm button {
+    background-color: #de9904;
+    border: none;
+    color: white;
+}
+
+#contactForm button:hover {
+    background-color: #664b00;
+}
+
+@media (min-width: 768px) {
+    .col-md-4 {
+        max-width: 33.33%; 
+    }
+
+    .col-md-8 {
+        max-width: 66.66%; 
+    }
 }
 
