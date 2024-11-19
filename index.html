@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="Landpage.css">
+    <title>Home-real</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -47,15 +47,21 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contact/contact.html">CONTACT</a>
                     </li>
-                </ul>
-
+                </ul> 
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#signUpModal"
+                    data-bs-whatever="@mdo">Sign Up</button>
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#logInModal">Log in</button>
+                    <!--cart button-->
+                    <button class="btn btn-primary" type="button" id="cartBtn" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+                    class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></button>
+                    <!--cart button-->
             </div>
         </div>
 
        <!--sign-up form start--> 
         <div class="form-btn">
-        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#signUpModal"
-            data-bs-whatever="@mdo">Sign Up</button>
+       
             <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
@@ -134,13 +140,9 @@
                 </div>
             </div>
         <!--sign-up form end--> 
-            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#logInModal">Log in</button>
+            
 
-            <!--cart button-->
-            <button class="btn btn-primary" type="button" id="cartBtn" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
-                class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></button>
-            <!--cart button-->
+           
 
            <!-- Log in button modal start -->
 <div class="modal fade" id="logInModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -434,7 +436,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
         integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
 
-    <script src="Landpage.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

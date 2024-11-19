@@ -49,14 +49,21 @@
             <a class="nav-link" href="../contact/contact.html">CONTACT</a>
           </li>
         </ul>
-
+            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#signUpModal"
+            data-bs-whatever="@mdo">Sign Up</button>
+            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#logInModal">Log
+              in</button>
+              <!--cart button-->
+            <button class="btn btn-primary" type="button" id="cartBtn" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+            class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></button>
+            <!--cart button-->
       </div>
     </div>
 
     <!--sign-up form start-->
-    <div class="form-btn ms-auto d-none d-lg-block">
-      <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#signUpModal"
-        data-bs-whatever="@mdo">Sign Up</button>
+    <div class="form-btn">
+      
       <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -136,15 +143,7 @@
         </div>
       </div>
       <!--sign-up form end-->
-      <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#logInModal">Log
-        in</button>
-
-
-      <!--cart button-->
-      <button class="btn btn-primary" type="button" id="cartBtn" data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
-          class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></button>
-      <!--cart button-->
+      
 
       <!--Log in button modal start-->
       <div class="modal fade" id="logInModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

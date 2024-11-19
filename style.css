@@ -10,6 +10,12 @@ body{
     background-attachment: fixed;
 }  
 
+.navbar .btn{
+    border-radius: 30px;
+    font-family: 'Montserrat', var(--font);
+    font-weight: 500;
+}
+
 #logo{
     height: 8vh;
     width: 5vw;
@@ -36,13 +42,7 @@ body{
 .form-btn{
     gap: 1.6em;
     position: relative;
-    right: 5em;
-}
-
-.form-btn .btn{
-    border-radius: 30px;
-    font-family: 'Montserrat', var(--font);
-    font-weight: 500;
+    left: 2em;
 }
 
 #search-btn:hover{
