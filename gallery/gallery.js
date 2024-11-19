@@ -74,6 +74,27 @@ $(document).ready(function () {
           event.preventDefault();
           event.stopPropagation();
       }
+
+      if (password !== confirmPassword) {
+        // Prevent form submission
+        e.preventDefault();
+
+        // Show error messages
+        $("#confirmPassword")
+          .addClass("is-invalid")
+          .next(".invalid-feedback")
+          .text("Passwords do not match.");
+      } else {
+        // Remove error state if passwords match
+        $("#confirmPassword").removeClass("is-invalid");
+      }
+
+      $("#confirmPassword").on("input", function () {
+        if ($(this).hasClass("is-invalid")) {
+          $(this).removeClass("is-invalid");
+        }
+      });
+    
       
      
       $(this).addClass('was-validated');
@@ -83,18 +104,18 @@ $(document).ready(function () {
 //add to cart
 
 const products = [
-    { id: 1, name: "Crochet Hat 1", price: 179.99, img: "img/hat1.jpg", description: "Black & White Beat"},
-    { id: 2, name: "Crochet Hat 2", price: 159.99, img: "img/hat2.jpg", description: "Blissful Hues"},
-    { id: 3, name: "Crochet Hat 3", price: 135.99, img: "img/hat3.jpg", description: "Reggae Rhythm"},
-    { id: 4, name: "Crochet Hat 4", price: 120.99, img: "img/hat4.jpg", description: "Grape Smoke"},
-    { id: 5, name: "Crochet Hat 5", price: 105.99, img: "img/hat5.jpg", description: "Pacific Blues"},
-    { id: 6, name: "Crochet Hat 6", price: 99.99, img: "img/hat6.jpg", description: "Peachy Keen"},
-    { id: 7, name: "Crochet Scarf 1", price: 199.99, img: "img/scarf1.jpg", description: "Rustic Warmth"},
-    { id: 8, name: "Crochet Scarf 2", price: 169.99, img: "img/scarf2.jpg", description: "Blushed Mocha"},
-    { id: 9, name: "Crochet Scarf 3", price: 140.99, img: "img/scarf3.jpg", description: "Midnight Scarlet"},
-    { id: 9, name: "Crochet Scarf 4", price: 125.99, img: "img/scarf4.jpg", description: "Ethereal Beige"},
-    { id: 10, name: "Crochet Scarf 5", price: 110.99, img: "img/scarf5.jpg", description: "Cloud Nine"},
-    { id: 11, name: "Crochet Scarf 6", price: 99.99, img: "img/scarf6.jpg", description: "Dawn Fog"},
+    { id: 1, name: "Black & White Beat", price: 179.99, img: "img/hat1.jpg", description: "Black & White Beat"},
+    { id: 2, name: "Blissful Hues", price: 159.99, img: "img/hat2.jpg", description: "Blissful Hues"},
+    { id: 3, name: "Reggae Rhythm", price: 135.99, img: "img/hat3.jpg", description: "Reggae Rhythm"},
+    { id: 4, name: "Grape Smoke", price: 120.99, img: "img/hat4.jpg", description: "Grape Smoke"},
+    { id: 5, name: "Pacific Blues", price: 105.99, img: "img/hat5.jpg", description: "Pacific Blues"},
+    { id: 6, name: "Peachy Keen", price: 99.99, img: "img/hat6.jpg", description: "Peachy Keen"},
+    { id: 7, name: "Rustic Warmth", price: 199.99, img: "img/scarf1.jpg", description: "Rustic Warmth"},
+    { id: 8, name: "Blushed Mocha", price: 169.99, img: "img/scarf2.jpg", description: "Blushed Mocha"},
+    { id: 9, name: "Midnight Scarlet", price: 140.99, img: "img/scarf3.jpg", description: "Midnight Scarlet"},
+    { id: 9, name: "Ethereal Beige", price: 125.99, img: "img/scarf4.jpg", description: "Ethereal Beige"},
+    { id: 10, name: "Cloud Nine", price: 110.99, img: "img/scarf5.jpg", description: "Cloud Nine"},
+    { id: 11, name: "Dawn Fog", price: 99.99, img: "img/scarf6.jpg", description: "Dawn Fog"},
 ]
 
 // Add to Cart functionality

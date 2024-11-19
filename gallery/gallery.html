@@ -71,12 +71,15 @@
                 id="signUp-btn"></button>
             </div>
             <div class="modal-body">
-              <form class="row g-3 needs-validation" novalidate>
+              <form class="row g-3 needs-validation" id="signUp-form" novalidate>
                 <div class="col-md-4">
                   <label for="validationCustom01" class="form-label">First name</label>
                   <input type="text" class="form-control" id="validationCustom01" required>
                   <div class="valid-feedback">
                     Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    Please input first name.
                   </div>
                 </div>
                 <div class="col-md-4">
@@ -85,32 +88,49 @@
                   <div class="valid-feedback">
                     Looks good!
                   </div>
+                  <div class="invalid-feedback">
+                    Please input last name.
+                  </div>
                 </div>
                 <div class="col-md-4">
-                  <label for="validationCustomUsername" class="form-label">Username</label>
+                  <label for="validationCustomUsername" class="form-label">Email</label>
                   <div class="input-group has-validation">
                     <span class="input-group-text" id="inputGroupPrepend">@</span>
-                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
                     <div class="invalid-feedback">
-                      Please choose a username.
+                      Please input email/gmail.
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <label for="validationCustom03" class="form-label">City</label>
+                  <label for="validationCustom03" class="form-label">Address</label>
                   <input type="text" class="form-control" id="validationCustom03" required>
                   <div class="invalid-feedback">
-                    Please provide a valid city.
+                    Please provide a valid address.
                   </div>
                 </div>
                 <div class="col-md-3">
-                  <label for="validationCustom04" class="form-label">State</label>
+                  <label for="validationCustom04" class="form-label">Region</label>
                   <select class="form-select" id="validationCustom04" required>
                     <option selected disabled value="">Choose...</option>
-                    <option>...</option>
+                    <option>Region I - Ilocos</option>
+                    <option>CAR - Cordillera Administrative Region</option>
+                    <option>Region II - Cagayan Valley</option>
+                    <option>NCR - National Capital Region</option>
+                    <option>Region IV-A - Calabarzon</option>
+                    <option>Region IV-B - MIMAROPA</option>
+                    <option>Region V - Bicol</option>
+                    <option>Region VI - Western Visayas</option>
+                    <option>Region VII - Central Visayas</option>
+                    <option>Region VIII - Eastern Visayas</option>
+                    <option>Region IX - Zamboanga Peninsula</option>
+                    <option>Region X - Northern Mindanao</option>
+                    <option>Region XII - SOCCSKSARGEN</option>
+                    <option>Region XIII - Caraga</option>
+                    <option>BARMM - Bangsamoro Autonomous Region in Muslim Mindanao</option>
                   </select>
                   <div class="invalid-feedback">
-                    Please select a valid state.
+                    Please select a valid region.
                   </div>
                 </div>
                 <div class="col-md-3">
@@ -118,6 +138,20 @@
                   <input type="text" class="form-control" id="validationCustom05" required>
                   <div class="invalid-feedback">
                     Please provide a valid zip.
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password" minlength="8" maxlength="16" required>
+                  <div class="invalid-feedback">
+                    Please provide a password.
+                  </div>
+                </div><br>
+                <div class="col-md-9">
+                  <label for="confirmPassword" class="form-label">Confirm Password</label>
+                  <input type="password" class="form-control" id="confirmPassword" required>
+                  <div class="invalid-feedback">
+                    Please confirm password.
                   </div>
                 </div>
                 <div class="col-12">
@@ -289,7 +323,7 @@
         <div class="card" data-bs-toggle="modal" data-bs-target="#productModal1">
           <img src="img/hat1.jpg" class="card-img-top" alt="Crochet Hat 1">
           <div class="card-body">
-            <h5 class="card-title">Hat 1</h5>
+            <h5 class="card-title">Black & White Beat</h5>
             <p class="card-text">PHP 179.99</p>
           </div>
         </div>
@@ -298,7 +332,7 @@
         <div class="card" data-bs-toggle="modal" data-bs-target="#productModal2">
           <img src="img/hat2.jpg" class="card-img-top" alt="Crochet Hat 2">
           <div class="card-body">
-            <h5 class="card-title">Hat 2</h5>
+            <h5 class="card-title">Blissful Hues</h5>
             <p class="card-text">PHP 159.99</p>
           </div>
         </div>
@@ -307,7 +341,7 @@
         <div class="card" data-bs-toggle="modal" data-bs-target="#productModal3">
           <img src="img/hat3.jpg" class="card-img-top" alt="Crochet Hat 2">
           <div class="card-body">
-            <h5 class="card-title">Hat 3</h5>
+            <h5 class="card-title">Reggae Rhythm</h5>
             <p class="card-text">PHP 135.99</p>
           </div>
         </div>
@@ -316,7 +350,7 @@
         <div class="card" data-bs-toggle="modal" data-bs-target="#productModal4">
           <img src="img/hat4.jpg" class="card-img-top" alt="Crochet Hat 2">
           <div class="card-body">
-            <h5 class="card-title">Hat 4</h5>
+            <h5 class="card-title">Grape Smoke</h5>
             <p class="card-text">PHP 120.99</p>
           </div>
         </div>
@@ -331,7 +365,7 @@
           <div class="card" data-bs-toggle="modal" data-bs-target="#productModal1.1">
             <img src="img/hat5.jpg" class="card-img-top" alt="Crochet Hat 3">
             <div class="card-body">
-              <h5 class="card-title">Hat 5</h5>
+              <h5 class="card-title">Pacific Blues</h5>
               <p class="card-text">Price: PHP 105.99</p>
             </div>
           </div>
@@ -340,7 +374,7 @@
           <div class="card" data-bs-toggle="modal" data-bs-target="#productModal1.2">
             <img src="img/hat6.jpg" class="card-img-top" alt="Crochet Hat 4">
             <div class="card-body">
-              <h5 class="card-title">Hat 6</h5>
+              <h5 class="card-title">Peachy Keen</h5>
               <p class="card-text">PHP 99.99</p>
             </div>
           </div>
@@ -362,7 +396,7 @@
         <div class="card" data-bs-toggle="modal" data-bs-target="#productModal5">
           <img src="img/scarf1.jpg" class="card-img-top" alt="Crochet Scarf 1">
           <div class="card-body">
-            <h5 class="card-title">Scarf 1</h5>
+            <h5 class="card-title">Rustic Warmth</h5>
             <p class="card-text">PHP 199.99</p>
           </div>
         </div>
@@ -371,7 +405,7 @@
         <div class="card" data-bs-toggle="modal" data-bs-target="#productModal6">
           <img src="img/scarf2.jpg" class="card-img-top" alt="Crochet Scarf 2">
           <div class="card-body">
-            <h5 class="card-title">Scarf 2</h5>
+            <h5 class="card-title">Blushed Mocha</h5>
             <p class="card-text">PHP 169.99</p>
           </div>
         </div>
@@ -380,7 +414,7 @@
         <div class="card" data-bs-toggle="modal" data-bs-target="#productModal7">
           <img src="img/scarf3.jpg" class="card-img-top" alt="Crochet Scarf 1">
           <div class="card-body">
-            <h5 class="card-title">Scarf 3</h5>
+            <h5 class="card-title">Midnight Scarlet</h5>
             <p class="card-text">PHP 140.99</p>
           </div>
         </div>
@@ -389,7 +423,7 @@
         <div class="card" data-bs-toggle="modal" data-bs-target="#productModal8">
           <img src="img/scarf4.jpg" class="card-img-top" alt="Crochet Scarf 1">
           <div class="card-body">
-            <h5 class="card-title">Scarf 4</h5>
+            <h5 class="card-title">Ethereal Beige</h5>
             <p class="card-text">PHP 125.99</p>
           </div>
         </div>
@@ -406,7 +440,7 @@
           <div class="card" data-bs-toggle="modal" data-bs-target="#productModal2.1">
             <img src="img/scarf5.jpg" class="card-img-top" alt="Crochet Scarf 3">
             <div class="card-body">
-              <h5 class="card-title">Scarf 5</h5>
+              <h5 class="card-title">Cloud Nine</h5>
               <p class="card-text">PHP 110.99</p>
             </div>
           </div>
@@ -415,7 +449,7 @@
           <div class="card" data-bs-toggle="modal" data-bs-target="#productModal2.2">
             <img src="img/scarf6.jpg" class="card-img-top" alt="Crochet Scarf 4">
             <div class="card-body">
-              <h5 class="card-title">Scarf 6</h5>
+              <h5 class="card-title">Dawn Fog</h5>
               <p class="card-text">PHP 99.99</p>
             </div>
           </div>
@@ -438,14 +472,14 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="productModalLabel">Crochet Hat 1</h5>
+              <h5 class="modal-title" id="productModalLabel">Black & White Beat</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <img src="img/hat1.jpg" class="img-fluid" alt="Crochet Hat 1">
               <p>Black & White Beat</p>
               <p><strong>Price: PHP 179.99</strong></p>
-              <button class="btn btn-primary add-to-cart" data-name="Crochet Hat 1" data-price="179.99" data-img="img/hat1.jpg" type="submit">Add to Cart</button>
+              <button class="btn btn-primary add-to-cart" data-name="Black & White Beat" data-price="179.99" data-img="img/hat1.jpg" type="submit">Add to Cart</button>
             </div>
             </div>
           </div>
@@ -455,14 +489,14 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="productModalLabel">Crochet Hat 2</h5>
+              <h5 class="modal-title" id="productModalLabel">Blissful Hues</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <img src="img/hat2.jpg" class="img-fluid" alt="Crochet Hat 2">
               <p>Blissful Hues</p>
               <p><strong>Price: PHP 159.99</strong></p>
-              <button class="btn btn-primary add-to-cart" data-name="Crochet Hat 2" data-price="159.99" data-img="img/hat2.jpg">Add to Cart</button>
+              <button class="btn btn-primary add-to-cart" data-name="Blissful Hues" data-price="159.99" data-img="img/hat2.jpg">Add to Cart</button>
             </div>
             </div>
           </div>
@@ -472,14 +506,14 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="productModalLabel">Crochet Hat 3</h5>
+              <h5 class="modal-title" id="productModalLabel">Reggae Rhythm</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <img src="img/hat3.jpg" class="img-fluid" alt="Crochet Hat 1">
               <p>Reggae Rhythm</p>
               <p><strong>Price: PHP 135.99</strong></p>
-              <button class="btn btn-primary add-to-cart" data-name="Crochet Hat 3" data-price="135.99" data-img="img/hat3.jpg">Add to Cart</button>
+              <button class="btn btn-primary add-to-cart" data-name="Reggae Rhythm" data-price="135.99" data-img="img/hat3.jpg">Add to Cart</button>
             </div>
             </div>
           </div>
@@ -489,14 +523,14 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="productModalLabel">Crochet Hat 4</h5>
+              <h5 class="modal-title" id="productModalLabel">Grape Smoke</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <img src="img/hat4.jpg" class="img-fluid" alt="Crochet Hat 4">
               <p>Grape Smoke</p>
               <p><strong>Price: PHP 120.99</strong></p>
-              <button class="btn btn-primary add-to-cart" data-name="Crochet Hat 4" data-price="120.99" data-img="img/hat4.jpg">Add to Cart</button>
+              <button class="btn btn-primary add-to-cart" data-name="Grape Smoke" data-price="120.99" data-img="img/hat4.jpg">Add to Cart</button>
             </div>
             </div>
           </div>
@@ -506,14 +540,14 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="productModalLabel">Crochet Hat 5</h5>
+              <h5 class="modal-title" id="productModalLabel">Pacific Blues</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <img src="img/hat5.jpg" class="img-fluid" alt="Crochet Hat 5">
               <p>Pacific Blues</p>
               <p><strong>Price: PHP 105.99</strong></p>
-              <button class="btn btn-primary add-to-cart" data-name="Crochet Hat 5" data-price="105.99" data-img="img/hat5.jpg">Add to Cart</button>
+              <button class="btn btn-primary add-to-cart" data-name="Pacific Blues" data-price="105.99" data-img="img/hat5.jpg">Add to Cart</button>
             </div>
             </div>
           </div>
@@ -523,14 +557,14 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="productModalLabel">Crochet Hat 6</h5>
+              <h5 class="modal-title" id="productModalLabel">Peachy Keen</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <img src="img/hat6.jpg" class="img-fluid" alt="Crochet Hat 6">
               <p>Peachy Keen</p>
               <p><strong>Price: PHP 99.99</strong></p>
-              <button class="btn btn-primary add-to-cart" data-name="Crochet Hat 6" data-price="99.99" data-img="img/hat6.jpg">Add to Cart</button>
+              <button class="btn btn-primary add-to-cart" data-name="Peachy Keen" data-price="99.99" data-img="img/hat6.jpg">Add to Cart</button>
             </div>
             </div>
           </div>
@@ -540,14 +574,14 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="productModalLabel">Crochet Scarf 1</h5>
+              <h5 class="modal-title" id="productModalLabel">Rustic Warmth</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <img src="img/scarf1.jpg" class="img-fluid" alt="Crochet Scarf 1">
               <p>Rustic Warmth</p>
               <p><strong>Price: PHP 199.99</strong></p>
-              <button class="btn btn-primary add-to-cart" data-name="Crochet Scarf 1" data-price="199.99" data-img="img/scarf1.jpg">Add to Cart</button>
+              <button class="btn btn-primary add-to-cart" data-name="Rustic Warmth" data-price="199.99" data-img="img/scarf1.jpg">Add to Cart</button>
             </div>
             </div>
           </div>
@@ -557,14 +591,14 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="productModalLabel">Crochet Scarf 2</h5>
+              <h5 class="modal-title" id="productModalLabel">Blushed Mocha</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <img src="img/scarf2.jpg" class="img-fluid" alt="Crochet Hat 1">
               <p>Blushed Mocha</p>
               <p><strong>Price: PHP 169.99</strong></p>
-              <button class="btn btn-primary add-to-cart" data-name="Crochet Scarf 2" data-price="169.99" data-img="img/scarf2.jpg">Add to Cart</button>
+              <button class="btn btn-primary add-to-cart" data-name="Blushed Mocha" data-price="169.99" data-img="img/scarf2.jpg">Add to Cart</button>
             </div>
             </div>
           </div>
@@ -574,14 +608,14 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="productModalLabel">Crochet Scarf 3</h5>
+              <h5 class="modal-title" id="productModalLabel">Midnight Scarlet</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <img src="img/scarf3.jpg" class="img-fluid" alt="Crochet Hat 1">
               <p>Midnight Scarlet</p>
               <p><strong>Price: PHP 140.99</strong></p>
-              <button class="btn btn-primary add-to-cart" data-name="Crochet Scarf 3" data-price="140.99" data-img="img/scarf3.jpg">Add to Cart</button>
+              <button class="btn btn-primary add-to-cart" data-name="Midnight Scarlet" data-price="140.99" data-img="img/scarf3.jpg">Add to Cart</button>
             </div>
             </div>
           </div>
@@ -591,14 +625,14 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="productModalLabel">Crochet Scarf 4</h5>
+              <h5 class="modal-title" id="productModalLabel">Ethereal Beige</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <img src="img/scarf4.jpg" class="img-fluid" alt="Crochet Hat 4">
               <p>Ethereal Beige</p>
               <p><strong>Price: PHP 125.99</strong></p>
-              <button class="btn btn-primary add-to-cart" data-name="Crochet Scarf 4" data-price="125.99" data-img="img/scarf4.jpg">Add to Cart</button>
+              <button class="btn btn-primary add-to-cart" data-name="Ethereal Beige" data-price="125.99" data-img="img/scarf4.jpg">Add to Cart</button>
             </div>
             </div>
           </div>
@@ -608,14 +642,14 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="productModalLabel">Crochet Scarf 5</h5>
+              <h5 class="modal-title" id="productModalLabel">Cloud Nine</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <img src="img/scarf5.jpg" class="img-fluid" alt="Crochet Hat 1">
               <p>Cloud Nine</p>
               <p><strong>Price: PHP 110.99</strong></p>
-              <button class="btn btn-primary add-to-cart" data-name="Crochet Scarf 5" data-price="110.99" data-img="img/scarf5.jpg">Add to Cart</button>
+              <button class="btn btn-primary add-to-cart" data-name="Cloud Nine" data-price="110.99" data-img="img/scarf5.jpg">Add to Cart</button>
             </div>
             </div>
           </div>
@@ -625,14 +659,14 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="productModalLabel">Crochet Scarf 6</h5>
+              <h5 class="modal-title" id="productModalLabel">Dawn Fog</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <img src="img/scarf6.jpg" class="img-fluid" alt="Crochet Hat 1">
               <p>Dawn Fog</p>
               <p><strong>Price: PHP 99.99</strong></p>
-              <button class="btn btn-primary add-to-cart" data-name="Crochet Scarf 6" data-price="99.99" data-img="img/scarf6.jpg">Add to Cart</button>
+              <button class="btn btn-primary add-to-cart" data-name="Dawn Fog" data-price="99.99" data-img="img/scarf6.jpg">Add to Cart</button>
             </div>
             </div>
           </div>
@@ -656,8 +690,25 @@
                             <textarea class="form-control" id="userAddress" rows="3" required></textarea>
                         </div>
                         <div class="mb-3">
+                          <h5><strong>Payment Options:</strong> <span id="paymentOptions"></span></h5>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="payment" id="cdo">
+                            <label class="form-check-label" for="cdo">
+                              Cash-on-delivery
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="payment" id="gcash">
+                            <label class="form-check-label" for="gcash">
+                              Gcash
+                            </label>
+                          </div>
+                        <div class="mb-3">
+                            <h5><strong>Payment Details:</strong> <span id="paymentDetails"></span></h5>
                             <p><strong>Product:</strong> <span id="checkoutProductName"></span></p>
                             <p><strong>Price:</strong> PHP <span id="checkoutProductPrice"></span></p>
+                            <p><strong>Shipping Fee:</strong> PHP 50<span id="shippingFee"></span></p>
+                            <p><strong>Total:</strong> PHP 50<span id="shippingFee"></span></p>
                         </div>
                     </form>
                 </div>
