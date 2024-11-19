@@ -74,27 +74,6 @@ $(document).ready(function () {
           event.preventDefault();
           event.stopPropagation();
       }
-
-      if (password !== confirmPassword) {
-        // Prevent form submission
-        e.preventDefault();
-
-        // Show error messages
-        $("#confirmPassword")
-          .addClass("is-invalid")
-          .next(".invalid-feedback")
-          .text("Passwords do not match.");
-      } else {
-        // Remove error state if passwords match
-        $("#confirmPassword").removeClass("is-invalid");
-      }
-
-      $("#confirmPassword").on("input", function () {
-        if ($(this).hasClass("is-invalid")) {
-          $(this).removeClass("is-invalid");
-        }
-      });
-    
       
      
       $(this).addClass('was-validated');
