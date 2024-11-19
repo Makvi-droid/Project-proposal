@@ -191,7 +191,7 @@
 
 
 
-  <!--add to cart btn start with modal-->
+  
   <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
     aria-labelledby="offcanvasWithBothOptionsLabel">
     <div class="offcanvas-header">
@@ -199,10 +199,12 @@
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-      <p>Your cart is empty</p>
+      <ul id="cart-items" class="list-group">
+        <li class="list-group-item">Your cart is empty</li>
+    </ul>
     </div>
-    <!--add to cart btn end with modal-->
   </div>
+
   <!--navbar end-->
 
 
@@ -272,10 +274,12 @@
   </div>
 </div>
 
+  
+  
 
-
-
-  <!--products-->
+  <div id="product-container">
+    <!-- Products will go here -->
+     <!--products-->
   <div class="container mt-5 products">
     <!-- Category 1: Crochet Hats -->
     <h2 class="mb-4">Crochet Hats</h2>
@@ -425,214 +429,251 @@
       Show More Crochet Scarves
     </button>
   </div>
-
-  <!-- Modals for Product Details (Sample for Hat 1) -->
-  <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="productModalLabel">Crochet Hat 1</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="img/hat1.jpg" class="img-fluid" alt="Crochet Hat 1">
-          <p>Black & White Beat</p>
-          <p><strong>Price: PHP 179.99</strong></p>
-          <button class="btn btn-primary" type="submit">Add to Cart</button>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="productModalLabel">Crochet Hat 2</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="img/hat2.jpg" class="img-fluid" alt="Crochet Hat 2">
-          <p>Blissful Hues </p>
-          <p><strong>Price: PHP 159.99</strong></p>
-          <button class="btn btn-primary">Add to Cart</button>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="productModalLabel">Crochet Hat 3</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="img/hat3.jpg" class="img-fluid" alt="Crochet Hat 1">
-          <p>Reggae Rhythm </p>
-          <p><strong>Price: PHP 135.99</strong></p>
-          <button class="btn btn-primary">Add to Cart</button>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="productModal4" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="productModalLabel">Crochet Hat 4</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="img/hat4.jpg" class="img-fluid" alt="Crochet Hat 1">
-          <p>Grape Smoke</p>
-          <p><strong>Price: PHP 120.99</strong></p>
-          <button class="btn btn-primary">Add to Cart</button>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="productModal1.1" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="productModalLabel">Crochet Hat 5</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="img/hat5.jpg" class="img-fluid" alt="Crochet Hat 1">
-          <p>Pacific Blues</p>
-          <p><strong>Price: PHP 105.99</strong></p>
-          <button class="btn btn-primary">Add to Cart</button>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="productModal1.2" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="productModalLabel">Crochet Hat 6</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="img/hat6.jpg" class="img-fluid" alt="Crochet Hat 1">
-          <p>Peachy Keen</p>
-          <p><strong>Price: PHP 99.99</strong></p>
-          <button class="btn btn-primary">Add to Cart</button>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="productModal5" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="productModalLabel">Crochet Scarf 1</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="img/scarf1.jpg" class="img-fluid" alt="Crochet Hat 1">
-          <p>Rustic Warmth</p>
-          <p><strong>Price: PHP 199.99</strong></p>
-          <button class="btn btn-primary">Add to Cart</button>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="productModal6" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="productModalLabel">Crochet Scarf 2</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="img/scarf2.jpg" class="img-fluid" alt="Crochet Hat 1">
-          <p>Blushed Mocha</p>
-          <p><strong>Price: PHP 169.99</strong></p>
-          <button class="btn btn-primary">Add to Cart</button>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="productModal7" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="productModalLabel">Crochet Scarf 3</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="img/scarf3.jpg" class="img-fluid" alt="Crochet Hat 1">
-          <p>Midnight Scarlet</p>
-          <p><strong>Price: PHP 140.99</strong></p>
-          <button class="btn btn-primary">Add to Cart</button>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="productModal8" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="productModalLabel">Crochet Scarf 4</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="img/scarf4.jpg" class="img-fluid" alt="Crochet Hat 1">
-          <p>Ethereal Beige</p>
-          <p><strong>Price: PHP 125.99</strong></p>
-          <button class="btn btn-primary">Add to Cart</button>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="productModal2.1" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="productModalLabel">Crochet Scarf 5</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="img/scarf5.jpg" class="img-fluid" alt="Crochet Hat 1">
-          <p>Cloud Nine</p>
-          <p><strong>Price: PHP 110.99</strong></p>
-          <button class="btn btn-primary">Add to Cart</button>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="productModal2.2" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="productModalLabel">Crochet Scarf 6</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="img/scarf6.jpg" class="img-fluid" alt="Crochet Hat 1">
-          <p>Dawn Fog</p>
-          <p><strong>Price: PHP 99.99</strong></p>
-          <button class="btn btn-primary">Add to Cart</button>
-        </div>
-        </div>
-      </div>
-    </div>
   </div>
 
+  <div id="modal-container">
+      <!-- Modals will go here -->
+       <!-- Modals for Product Details -->
+      <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Crochet Hat 1</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/hat1.jpg" class="img-fluid" alt="Crochet Hat 1">
+              <p>Black & White Beat</p>
+              <p><strong>Price: PHP 179.99</strong></p>
+              <button class="btn btn-primary add-to-cart" data-name="Crochet Hat 1" data-price="179.99" data-img="img/hat1.jpg" type="submit">Add to Cart</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Crochet Hat 2</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/hat2.jpg" class="img-fluid" alt="Crochet Hat 2">
+              <p>Blissful Hues</p>
+              <p><strong>Price: PHP 159.99</strong></p>
+              <button class="btn btn-primary add-to-cart" data-name="Crochet Hat 2" data-price="159.99" data-img="img/hat2.jpg">Add to Cart</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Crochet Hat 3</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/hat3.jpg" class="img-fluid" alt="Crochet Hat 1">
+              <p>Reggae Rhythm</p>
+              <p><strong>Price: PHP 135.99</strong></p>
+              <button class="btn btn-primary add-to-cart" data-name="Crochet Hat 3" data-price="135.99" data-img="img/hat3.jpg">Add to Cart</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="productModal4" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Crochet Hat 4</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/hat4.jpg" class="img-fluid" alt="Crochet Hat 4">
+              <p>Grape Smoke</p>
+              <p><strong>Price: PHP 120.99</strong></p>
+              <button class="btn btn-primary add-to-cart" data-name="Crochet Hat 4" data-price="120.99" data-img="img/hat4.jpg">Add to Cart</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="productModal1.1" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Crochet Hat 5</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/hat5.jpg" class="img-fluid" alt="Crochet Hat 5">
+              <p>Pacific Blues</p>
+              <p><strong>Price: PHP 105.99</strong></p>
+              <button class="btn btn-primary add-to-cart" data-name="Crochet Hat 5" data-price="105.99" data-img="img/hat5.jpg">Add to Cart</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="productModal1.2" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Crochet Hat 6</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/hat6.jpg" class="img-fluid" alt="Crochet Hat 6">
+              <p>Peachy Keen</p>
+              <p><strong>Price: PHP 99.99</strong></p>
+              <button class="btn btn-primary add-to-cart" data-name="Crochet Hat 6" data-price="99.99" data-img="img/hat6.jpg">Add to Cart</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="productModal5" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Crochet Scarf 1</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/scarf1.jpg" class="img-fluid" alt="Crochet Scarf 1">
+              <p>Rustic Warmth</p>
+              <p><strong>Price: PHP 199.99</strong></p>
+              <button class="btn btn-primary add-to-cart" data-name="Crochet Scarf 1" data-price="199.99" data-img="img/scarf1.jpg">Add to Cart</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="productModal6" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Crochet Scarf 2</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/scarf2.jpg" class="img-fluid" alt="Crochet Hat 1">
+              <p>Blushed Mocha</p>
+              <p><strong>Price: PHP 169.99</strong></p>
+              <button class="btn btn-primary add-to-cart" data-name="Crochet Scarf 2" data-price="169.99" data-img="img/scarf2.jpg">Add to Cart</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="productModal7" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Crochet Scarf 3</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/scarf3.jpg" class="img-fluid" alt="Crochet Hat 1">
+              <p>Midnight Scarlet</p>
+              <p><strong>Price: PHP 140.99</strong></p>
+              <button class="btn btn-primary add-to-cart" data-name="Crochet Scarf 3" data-price="140.99" data-img="img/scarf3.jpg">Add to Cart</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="productModal8" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Crochet Scarf 4</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/scarf4.jpg" class="img-fluid" alt="Crochet Hat 4">
+              <p>Ethereal Beige</p>
+              <p><strong>Price: PHP 125.99</strong></p>
+              <button class="btn btn-primary add-to-cart" data-name="Crochet Scarf 4" data-price="125.99" data-img="img/scarf4.jpg">Add to Cart</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="productModal2.1" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Crochet Scarf 5</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/scarf5.jpg" class="img-fluid" alt="Crochet Hat 1">
+              <p>Cloud Nine</p>
+              <p><strong>Price: PHP 110.99</strong></p>
+              <button class="btn btn-primary add-to-cart" data-name="Crochet Scarf 5" data-price="110.99" data-img="img/scarf5.jpg">Add to Cart</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="productModal2.2" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Crochet Scarf 6</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/scarf6.jpg" class="img-fluid" alt="Crochet Hat 1">
+              <p>Dawn Fog</p>
+              <p><strong>Price: PHP 99.99</strong></p>
+              <button class="btn btn-primary add-to-cart" data-name="Crochet Scarf 6" data-price="99.99" data-img="img/scarf6.jpg">Add to Cart</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="checkoutModalLabel">Checkout</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="checkoutForm">
+                        <div class="mb-3">
+                            <label for="userName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="userName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="userAddress" class="form-label">Address</label>
+                            <textarea class="form-control" id="userAddress" rows="3" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <p><strong>Product:</strong> <span id="checkoutProductName"></span></p>
+                            <p><strong>Price:</strong> PHP <span id="checkoutProductPrice"></span></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="confirmCheckout">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  </div>
 
+
+
+<!--footer-->
   <footer class="bg-light text-center text-lg-start">
     <div class="container p-4">
       <section class="mb-4">
