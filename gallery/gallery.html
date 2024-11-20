@@ -71,7 +71,7 @@
                 id="signUp-btn"></button>
             </div>
             <div class="modal-body">
-              <form class="row g-3 needs-validation" id="signUp-form">
+              <form class="row g-3 needs-validation" id="signUp-form" novalidate>
                 <div class="col-md-4">
                   <label for="validationCustom01" class="form-label">First name</label>
                   <input type="text" class="form-control" id="validationCustom01" required>
@@ -474,12 +474,95 @@
       aria-expanded="false" aria-controls="collapseScarves">
       Show More Crochet Scarves
     </button>
+
+
+    <!--Crochet clothes-->
+    <h2 class="mt-5 mb-4">Crochet Clothes</h2>
+    <div class="row">
+      <!-- Product Card (Initial) -->
+      <div class="col-6 col-md-4 col-lg-3 mb-4 product-card">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#crochet-clothes1">
+          <img src="img/clothes1.jpg" class="card-img-top" alt="Crochet Clothes 1">
+          <div class="card-body">
+            <h5 class="card-title">Flora Flutter Top</h5>
+            <p class="card-text">PHP 199.99</p>
+            <p class="card-text">3.9 <i class="fa-solid fa-star"></i>(893)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 mb-4 product-card">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#crochet-clothes2">
+          <img src="img/clothes2.jpg" class="card-img-top" alt="Crochet Clothes 2">
+          <div class="card-body">
+            <h5 class="card-title">Whispering Willow Tee</h5>
+            <p class="card-text">PHP 169.99</p>
+            <p class="card-text">4.2 <i class="fa-solid fa-star"></i>(1,443)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 mb-4 product-card">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#crochet-clothes3">
+          <img src="img/clothes3.jpg" class="card-img-top" alt="Crochet Clothes 3">
+          <div class="card-body">
+            <h5 class="card-title">Seashell Breeze Halter</h5>
+            <p class="card-text">PHP 149.99</p>
+            <p class="card-text">4.7 <i class="fa-solid fa-star"></i>(2,901)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 mb-4 product-card">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#crochet-clothes4">
+          <img src="img/clothes4.jpg" class="card-img-top" alt="Crochet Clothes 4">
+          <div class="card-body">
+            <h5 class="card-title">Autumn Thread Blooms</h5>
+            <p class="card-text">PHP 179.99</p>
+            <p class="card-text">4.6 <i class="fa-solid fa-star"></i>(2,943)</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- Collapsible Section for More Products -->
+    <div class="collapse" id="collapseClothes">
+      <div class="row">
+        <!-- Additional Product Cards -->
+        <div class="col-6 col-md-4 col-lg-3 mb-4 product-card">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#crochet-clothes5">
+            <img src="img/clothes5.jpg" class="card-img-top" alt="Crochet Clothes 5">
+            <div class="card-body">
+              <h5 class="card-title">Radiant Weave Top</h5>
+              <p class="card-text">PHP 119.99</p>
+              <p class="card-text">4.3 <i class="fa-solid fa-star"></i>(1,451)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-4 product-card">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#crochet-clothes6">
+            <img src="img/clothes6.jpg" class="card-img-top" alt="Crochet Clothes 6">
+            <div class="card-body">
+              <h5 class="card-title">Pattern Pullover</h5>
+              <p class="card-text">PHP 199.99</p>
+              <p class="card-text">4.1 <i class="fa-solid fa-star"></i>(1,003)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- "Show More" Dropdown Button for Category 2 -->
+    <button class="btn btn-link show-more" type="button" data-bs-toggle="collapse" data-bs-target="#collapseClothes"
+      aria-expanded="false" aria-controls="collapseScarves">
+      Show More Crochet Clothes
+    </button>
   </div>
   </div>
 
   <div id="modal-container">
       <!-- Modals will go here -->
-       <!-- Modals for Product Details -->
+      <!-- Modals for Product Details -->
+      <!--Hats-->
       <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -582,6 +665,8 @@
           </div>
         </div>
       </div>
+
+      <!--Scarves-->
       <div class="modal fade" id="productModal5" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -684,6 +769,114 @@
           </div>
         </div>
       </div>
+
+      <!--Clothes-->
+      <div class="modal fade" id="crochet-clothes1" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Flora Flutter Top</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/clothes1.jpg" class="img-fluid" alt="Crochet Hat 1">
+              <p>Flora Flutter Top</p>
+              <p><strong>Price: PHP 199.99</strong></p>
+              <button class="btn btn-primary add-to-cart" data-name="Flora Flutter Top" data-price="199.99" data-img="img/clothes1.jpg" type="submit">Add to Cart</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="crochet-clothes2" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Whispering Willow Tee</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/clothes2.jpg" class="img-fluid" alt="Crochet Hat 1">
+              <p>Whispering Willow Tee</p>
+              <p><strong>Price: PHP 169.99</strong></p>
+              <button class="btn btn-primary add-to-cart" data-name="Whispering Willow Tee" data-price="169.99" data-img="img/clothes2.jpg" type="submit">Add to Cart</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="crochet-clothes3" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Seashell Breeze Halter</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/clothes3.jpg" class="img-fluid" alt="Crochet Hat 1">
+              <p>Seashell Breeze Halter</p>
+              <p><strong>Price: PHP 149.99</strong></p>
+              <button class="btn btn-primary add-to-cart" data-name="Seashell Breeze Halter" data-price="149.99" data-img="img/clothes3.jpg" type="submit">Add to Cart</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="crochet-clothes4" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Autumn Thread Blooms</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/clothes4.jpg" class="img-fluid" alt="Crochet Hat 1">
+              <p>Autumn Thread Blooms</p>
+              <p><strong>Price: PHP 179.99</strong></p>
+              <button class="btn btn-primary add-to-cart" data-name="Autumn Thread Blooms" data-price="179.99" data-img="img/clothes4.jpg" type="submit">Add to Cart</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="crochet-clothes5" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Radiant Weave Top</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/clothes5.jpg" class="img-fluid" alt="Crochet Hat 1">
+              <p>Radiant Weave Top</p>
+              <p><strong>Price: PHP 119.99</strong></p>
+              <button class="btn btn-primary add-to-cart" data-name="Radiant Weave Top" data-price="119.99" data-img="img/clothes5.jpg" type="submit">Add to Cart</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="crochet-clothes6" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Pattern Pullover</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/clothes6.jpg" class="img-fluid" alt="Crochet Hat 1">
+              <p>Pattern Pullover</p>
+              <p><strong>Price: PHP 199.99</strong></p>
+              <button class="btn btn-primary add-to-cart" data-name="Pattern Pullover" data-price="199.99" data-img="img/clothes6.jpg" type="submit">Add to Cart</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!--Checkout modal-->
       <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">

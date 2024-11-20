@@ -95,9 +95,15 @@ const products = [
     { id: 7, name: "Rustic Warmth", price: 199.99, img: "img/scarf1.jpg", description: "Rustic Warmth"},
     { id: 8, name: "Blushed Mocha", price: 169.99, img: "img/scarf2.jpg", description: "Blushed Mocha"},
     { id: 9, name: "Midnight Scarlet", price: 140.99, img: "img/scarf3.jpg", description: "Midnight Scarlet"},
-    { id: 9, name: "Ethereal Beige", price: 125.99, img: "img/scarf4.jpg", description: "Ethereal Beige"},
-    { id: 10, name: "Cloud Nine", price: 110.99, img: "img/scarf5.jpg", description: "Cloud Nine"},
-    { id: 11, name: "Dawn Fog", price: 99.99, img: "img/scarf6.jpg", description: "Dawn Fog"},
+    { id: 10, name: "Ethereal Beige", price: 125.99, img: "img/scarf4.jpg", description: "Ethereal Beige"},
+    { id: 11, name: "Cloud Nine", price: 110.99, img: "img/scarf5.jpg", description: "Cloud Nine"},
+    { id: 12, name: "Dawn Fog", price: 99.99, img: "img/scarf6.jpg", description: "Dawn Fog"},
+    { id: 13, name: "Flora Flutter Top", price: 199.99, img: "img/clothes1.jpg", description: "Flora Flutter Top"},
+    { id: 14, name: "Whispering Willow Tee", price: 169.99, img: "img/clothes2.jpg", description: "Whispering Willow Tee"},
+    { id: 15, name: "Seashell Breeze Halter", price: 149.99, img: "img/clothes3.jpg", description: "Seashell Breeze Halter"},
+    { id: 16, name: "Autumn Thread Blooms", price: 179.99, img: "img/clothes4.jpg", description: "Autumn Thread Blooms"},
+    { id: 17, name: "Radiant Weave Top", price: 119.99, img: "img/clothes5.jpg", description: "Radiant Weave Top"},
+    { id: 18, name: "Pattern Pullover", price: 199.99, img: "img/clothes6.jpg", description: "Pattern Pullover"}
 ]
 
 // Add to Cart functionality
