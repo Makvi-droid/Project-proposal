@@ -19,40 +19,39 @@ $(document).ready(function () {
     event.preventDefault();  
     let form = this;
     
-    // Check if the form is valid
+    
     if (form.checkValidity() === false) {
       event.stopPropagation();
     } else {
-      // Handle successful form submission here (e.g., login process)
+      
       alert('Logging in...');
     }
 
     form.classList.add('was-validated');
   });
 
-  // Sign up form validation
+  
   $('#signup-form').on('submit', function (event) {
-    event.preventDefault();  // Prevent form submission to allow validation
+    event.preventDefault();  
     let form = this;
-
-    // Custom validation for password confirmation
+    
     let password = $('#signup-password').val();
     let confirmPassword = $('#signup-confirm-password').val();
 
-    // Check if passwords match
+    
     if (password !== confirmPassword) {
       $('#signup-confirm-password')[0].setCustomValidity('Passwords do not match');
-      // Prevent form submission if passwords don't match
+      
       event.stopPropagation();
     } else {
       $('#signup-confirm-password')[0].setCustomValidity('');
     }
 
-    // Check if the form is valid and proceed with submission
+    
     if (form.checkValidity() === false) {
       event.stopPropagation();
     } else {
-      // Handle successful form submission here (e.g., account creation)
+      
       alert('Signing up...');
     }
 
