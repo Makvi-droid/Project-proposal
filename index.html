@@ -24,12 +24,12 @@
           <h2 class="title">Log in</h2>
           <div class="input-field">
             <i class="fas fa-user"></i>
-            <input type="text" class="form-control" placeholder="Username" id="login-username" required />
+            <input type="text" class="form-control" name="login-username" placeholder="Username" id="login-username" required />
             <div class="invalid-tooltip">Please enter your username.</div>
           </div>
           <div class="input-field">
             <i class="fas fa-lock"></i>
-            <input type="password" class="form-control" placeholder="Password" id="login-password" required />
+            <input type="password" class="form-control" name="login-password" placeholder="Password" id="login-password" required />
             <div class="invalid-tooltip">Please enter your password.</div>
           </div>
           <button class="btn btn-warning" type="submit">Log In</button>
@@ -40,22 +40,22 @@
           <h2 class="title">Sign up</h2>
           <div class="input-field">
             <i class="fas fa-user"></i>
-            <input type="text" class="form-control" name="username" placeholder="Username" id="signup-username" minlength="4" required />
+            <input type="text" class="form-control" name="signup-username" placeholder="Username" id="signup-username" minlength="4" required />
             <div class="invalid-tooltip">Username is too short (min. 4 characters).</div>
           </div>
           <div class="input-field">
             <i class="fas fa-envelope"></i>
-            <input type="email" class="form-control" name="email" placeholder="Email" id="signup-email" required />
+            <input type="email" class="form-control" name="signup-email" placeholder="Email" id="signup-email" required />
             <div class="invalid-tooltip">Please enter a valid email.</div>
           </div>
           <div class="input-field">
             <i class="fas fa-lock"></i>
-            <input type="password" name="password" class="form-control" placeholder="Password" id="signup-password" minlength="5" required />
+            <input type="password" name="signup-password" class="form-control" placeholder="Password" id="signup-password" minlength="5" required />
             <div class="invalid-tooltip">Password is too short (min. 5 characters).</div>
           </div>
           <div class="input-field">
             <i class="fas fa-lock"></i>
-            <input type="password" name="confirmPassword" class="form-control" placeholder="Confirm Password" id="signup-confirm-password" required />
+            <input type="password" name="signup-confirm-password" class="form-control" placeholder="Confirm Password" id="signup-confirm-password" required />
             <div class="invalid-tooltip">Passwords do not match.</div>
             <div class="valid-tooltip">Passwords match.</div>
           </div>
