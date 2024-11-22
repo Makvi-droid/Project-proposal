@@ -45,43 +45,6 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
-    $("#signUp-form").on("submit", function (e) {
-      // Prevent Bootstrap's form validation and the default form submission
-      e.preventDefault();
-
-      // Get values of password and confirm password
-      const password = $("#password").val();
-      const confirmPassword = $("#confirmPassword").val();
-
-      // Check if passwords match
-      if (password !== confirmPassword) {
-        // Add invalid class and show error message for confirmPassword
-        $("#confirmPassword")
-          .addClass("is-invalid")
-          .next(".invalid-feedback")
-          .text("Passwords do not match.");
-
-        // Add invalid class for password field as well, if needed
-        $("#password").addClass("is-invalid");
-      } else {
-        // Remove invalid class if passwords match
-        $("#confirmPassword").removeClass("is-invalid");
-        $("#password").removeClass("is-invalid");
-
-        // Trigger form submission manually here after the check is successful
-        alert("Form is valid, submitting...");
-        // You can submit the form here manually
-        this.submit();  // This line will submit the form
-      }
-    });
-
-    // Optional: Remove error class when user starts typing again
-    $("#password, #confirmPassword").on("input", function () {
-      $(this).removeClass("is-invalid");
-    });
-  });
-
 
 //add to cart
 
